@@ -63,11 +63,12 @@ extension UIView {
 
 //MARK: - Added Functionality
 extension UIView {
-    public func makeRepeatingRotations(duration: TimeInterval = 1, delay: TimeInterval = 0, animatingOptions: UIView.AnimationOptions = [.repeat, .curveEaseInOut]) {
-        var transformAngle: CGFloat = .pi
+    public func makeRepeatingRotations(duration: TimeInterval = 1, delay: TimeInterval = 0, animatingOptions: UIView.AnimationOptions = [.curveEaseInOut], angle: CGFloat = .pi) {
         UIView.animate(withDuration: duration, delay: delay, options: animatingOptions) {
-            self.transform = CGAffineTransform(rotationAngle: transformAngle)
-            transformAngle = transformAngle == .pi ? 0 : .pi
+            self.transform = CGAffineTransform(rotationAngle: angle)
+        } completion: { _ in
+            let newAngle = (angle + .pi).truncatingRemainder(dividingBy: (2 * .pi))
+            self.makeRepeatingRotations(angle: newAngle)
         }
     }
 }

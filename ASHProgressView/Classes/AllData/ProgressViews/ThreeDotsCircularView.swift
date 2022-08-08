@@ -17,14 +17,16 @@ class ThreeDotsCircularView: UIView {
     private var circularViewBackgroundColor: UIColor
     private var dotColorsArray: [UIColor]
     
-    private lazy var threeDotsViewHostingController: UIHostingController = UIHostingController(rootView: ThreeDotsCircle(title: title,
-                                                                                                                         circleBackgroundColor: Color(circularViewBackgroundColor),
-                                                                                                                         circleDotColors: dotColorsArray.compactMap{ Color($0) }))
+    private lazy var threeDotsCircleView = ThreeDotsCircle(title: title,
+                                                           circleBackgroundColor: Color(circularViewBackgroundColor),
+                                                           circleDotColors: dotColorsArray.compactMap{ Color($0) })
+    
+    private lazy var threeDotsViewHostingController: UIHostingController = UIHostingController(rootView: threeDotsCircleView)
     
     //MARK: - Section Name
-    init(title: String? = nil,
-         backgroundColor: UIColor = .white,
-         dotColorsArray: [UIColor] = [.white]) {
+    public init(title: String? = nil,
+                backgroundColor: UIColor = .white,
+                dotColorsArray: [UIColor] = [.white]) {
         self.title = title
         self.circularViewBackgroundColor = backgroundColor
         self.dotColorsArray = dotColorsArray
@@ -41,6 +43,8 @@ class ThreeDotsCircularView: UIView {
         
         //properties
         translatesAutoresizingMaskIntoConstraints = false
+        threeDotsViewHostingController.view.translatesAutoresizingMaskIntoConstraints = false
+        threeDotsViewHostingController.view.backgroundColor = .clear
         
         //subviews
         addSubview(threeDotsViewHostingController.view)

@@ -16,12 +16,14 @@ class ViewController: UIViewController {
         let obj = UIView()
         obj.translatesAutoresizingMaskIntoConstraints = false
         obj.backgroundColor = .white
+        obj.layer.cornerRadius = 20
         return obj
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ASHProgessViewStyle.standard = .plainCircle("Hello, wait!", .orange)
+//        ASHProgessViewStyle.standard = .threeCircles("Loading", .green, [.purple])
+        ASHProgessViewStyle.standard = .fourCircles("Loading", .black, [.purple, .yellow, .red, .green])
         view.backgroundColor = .gray
         view.addSubview(containerView)
         NSLayoutConstraint.activate([

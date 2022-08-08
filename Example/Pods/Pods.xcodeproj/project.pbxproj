@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		193A57674B823D36600D701466C304EE /* Pods-ASHProgressView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C673F964F82DFB61C0E34F163DC83E2A /* Pods-ASHProgressView_Example-dummy.m */; };
-		20775DCDDE2D8595E64204E934C4D29C /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE9A6851C00139E1002574DF9DB9C03 /* ReplaceMe.swift */; };
 		2C191699271F9799B985F9347578B491 /* ASHProgressView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C3C3DF9D31B3ADE11D503E9956D004B4 /* ASHProgressView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		343413C628A180DB00C1E31D /* ASHProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343413BC28A180DB00C1E31D /* ASHProgressView.swift */; };
 		343413C728A180DB00C1E31D /* ExtensionUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343413BE28A180DB00C1E31D /* ExtensionUIView.swift */; };
@@ -74,7 +73,6 @@
 		ADB1C33047868F07D07851E839CB7ADD /* ASHProgressView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ASHProgressView-dummy.m"; sourceTree = "<group>"; };
 		AE5E4B31CE8E8A99E05262D947359B71 /* Pods-ASHProgressView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ASHProgressView_Example-Info.plist"; sourceTree = "<group>"; };
 		B8C94E6E9709E7CCD41D17565F1EB6FD /* ASHProgressView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ASHProgressView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BCE9A6851C00139E1002574DF9DB9C03 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = ASHProgressView/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		C3C3DF9D31B3ADE11D503E9956D004B4 /* ASHProgressView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ASHProgressView-umbrella.h"; sourceTree = "<group>"; };
 		C673F964F82DFB61C0E34F163DC83E2A /* Pods-ASHProgressView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ASHProgressView_Example-dummy.m"; sourceTree = "<group>"; };
 		D2861D9821599B86E7DA82F4A9FA72F0 /* Pods-ASHProgressView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ASHProgressView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -260,7 +258,6 @@
 			isa = PBXGroup;
 			children = (
 				343413BA28A180DB00C1E31D /* AllData */,
-				BCE9A6851C00139E1002574DF9DB9C03 /* ReplaceMe.swift */,
 				C93988CB98CD93B924EBD2EC3D743A97 /* Pod */,
 				C7C4B85AA7FCA23EDE61E5BC102904CB /* Support Files */,
 			);
@@ -445,7 +442,6 @@
 				343413C728A180DB00C1E31D /* ExtensionUIView.swift in Sources */,
 				343413C828A180DB00C1E31D /* ExtensionArray.swift in Sources */,
 				343413C928A180DB00C1E31D /* ThreeDotsCircularView.swift in Sources */,
-				20775DCDDE2D8595E64204E934C4D29C /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
