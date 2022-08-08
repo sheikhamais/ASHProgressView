@@ -1,0 +1,22 @@
+{
+  "name": "ASHProgressView",
+  "version": "0.1.0",
+  "summary": "A short description of ASHProgressView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/sheikhamais/ASHProgressView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "sheikhamais": "sheikhamais@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/sheikhamais/ASHProgressView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "ASHProgressView/Classes/**/*"
+}

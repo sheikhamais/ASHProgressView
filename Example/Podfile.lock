@@ -1,0 +1,16 @@
+PODS:
+  - ASHProgressView (0.1.0)
+
+DEPENDENCIES:
+  - ASHProgressView (from `../`)
+
+EXTERNAL SOURCES:
+  ASHProgressView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ASHProgressView: 7acae3064cbc40cb7c6ffb4e60eb14cd8a1056c7
+
+PODFILE CHECKSUM: b236c2f3bdf33e4a53e86c6746afcaa3bd4e1835
+
+COCOAPODS: 1.11.3
