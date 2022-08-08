@@ -35,18 +35,18 @@ This pod empowers your UIViews to show a progess indicator that is customisable 
   //.threeCircles(nil, .black.withAlphaComponent(0.4), [.white])
   //.plainCircle("Loading", .red)
   //.gradientCircle("Loading", [.red, .systemIndigo])
-    ```
+  ```
   
   Use the following styles in the following way:
 
 ```ruby    
   myUIView.showProgressView(style: 'anyAboveStyle')
-      ```
+  ```
   or
   set once the standard style:
   ```ruby  
   ASHProgessViewStyle.standard = 'anyAboveStyle'
-      ```
+  ```
 
 ## Author
 
