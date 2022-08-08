@@ -9,8 +9,6 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
-
 ## Installation
 
 ASHProgressView is available through [CocoaPods](https://cocoapods.org). To install
@@ -19,6 +17,36 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'ASHProgressView'
 ```
+
+## Usage
+
+This pod empowers your UIViews to show a progess indicator that is customisable in four different ways. To use this:
+
+```ruby  
+  myUIView.showProgressView()
+  myUIView.hideProgressView()
+  ```
+  
+  This is all you need to use this.
+  Also, you can use four different type of styles to customise it's appearence.
+
+```ruby  
+  //.fourCircles(nil, .black.withAlphaComponent(0.4), [.white])
+  //.threeCircles(nil, .black.withAlphaComponent(0.4), [.white])
+  //.plainCircle("Loading", .red)
+  //.gradientCircle("Loading", [.red, .systemIndigo])
+    ```
+  
+  Use the following styles in the following way:
+
+```ruby    
+  myUIView.showProgressView(style: 'anyAboveStyle')
+      ```
+  or
+  set once the standard style:
+  ```ruby  
+  ASHProgessViewStyle.standard = 'anyAboveStyle'
+      ```
 
 ## Author
 
