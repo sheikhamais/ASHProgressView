@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ASHProgressView'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'A customiseable progess view for iOS applications.'
   s.swift_version    = '5.0'
 

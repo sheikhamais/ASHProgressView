@@ -45,8 +45,10 @@ extension UIView {
            existingViewInfo.0 > 0 {
             
             if existingViewInfo.0 == 1 {
-                existingViewInfo.1.removeFromSuperview()
-                isUserInteractionEnabled = true
+                DispatchQueue.main.async {
+                    existingViewInfo.1.removeFromSuperview()
+                    self.isUserInteractionEnabled = true
+                }
             }
             
             ASHProgressViewCounter.views[self] = (existingViewInfo.0 - 1, existingViewInfo.1)
